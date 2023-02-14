@@ -1,0 +1,70 @@
+.notification{
+    cursor: pointer;
+    background: rgba(37, 37, 37, 0.6);
+    backdrop-filter: blur(27.1828px);
+    border-radius: 13px;
+    margin: 10px 10px;
+    position: relative;
+    &__container{
+        padding: 10px;
+    }
+    &__figma{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-when{
+            color: rgba(255,255,255,16%);
+        }
+    }
+    &__content{
+        margin: 8px 0px 0px 0px;
+        &-title{
+            font-weight: 500;
+            margin: 0px 0px 4px 0px;
+            font-size: 15px;
+        }
+        &-text{
+            font-size: 15px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+        &-title,&-text{
+            color: #fff;
+        }
+    }
+    &__close{
+        opacity: 0;
+        position: absolute;
+        right: 5px;
+        top: -35px;
+        width: 26px;
+        height: 26px; 
+        visibility: hidden;
+        pointer-events: none;
+        transition: .5s all ease;
+    }
+    &__dismiss{
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: .5s all ease;
+        color: #fff;
+        text-align: center;
+        padding: 18px 16px;
+        width: 100%;
+        bottom: -60px;
+        cursor: pointer;
+        background: rgba(37, 37, 37, 0.6);
+        border-radius: 14px;
+        position: absolute;
+    }
+    &.active{
+        pointer-events: none;
+    }
+    &.active &__close, &.active &__dismiss{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+        cursor: pointer;
+    } 
+}

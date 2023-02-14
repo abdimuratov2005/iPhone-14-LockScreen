@@ -1,0 +1,21 @@
+.lockscreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    transition: .8 ease all;
+    &__render{
+        width: 375px;
+        height: 812px;
+        background: url("@/img/Wallpaper.png") no-repeat;
+    }
+    &__container{
+        position: relative;
+        transition: all .5s ease;
+        &.active{
+            background: rgba(255, 255, 255, 0.01);
+            backdrop-filter: blur(20px);
+        }
+    }
+}

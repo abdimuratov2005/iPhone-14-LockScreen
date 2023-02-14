@@ -1,0 +1,19 @@
+.time{
+    font-size: 89px;
+    font-weight: 400;
+}
+.timeData{
+    transition: .5s all ease;
+    &.active{
+        filter: blur(20px);
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__lock{
+        margin: 15px 0px 5px 0px;
+    }
+}

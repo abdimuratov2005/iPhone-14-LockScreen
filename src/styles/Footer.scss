@@ -1,0 +1,25 @@
+.footer{
+    margin: 366px 46px 0px 46px;
+    transition: .5s all ease;
+    &.active{
+        pointer-events: none;
+        filter: blur(20px);
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{    
+            cursor: pointer;
+        }           
+    }
+}
+.swipeToTop{
+    cursor:grabbing;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.408px;
+    color: #FFFFFF;
+    opacity: 0.64;
+}

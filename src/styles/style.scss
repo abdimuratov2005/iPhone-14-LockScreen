@@ -1,0 +1,19 @@
+*,*::after,*::before{
+    list-style: none;
+    user-select: none;
+    font-family: "SF PRO Display";
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "Lockscreens";
+    @import "SideBar";
+    @import "Date";
+    @import "TimeData";
+    @import "Notification";
+    @import "FigmaLogo";
+    @import "Footer";
+    
