@@ -9,7 +9,7 @@
         data() {
             return{
                 hours: new Date().getHours(),
-                minutes: new Date().getHours(),
+                minutes: new Date().getMinutes(),
             }
         },
         methods:{
