@@ -9,12 +9,10 @@
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
-    "vue-router": "^4.1.6",
     "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "node-sass": "^8.0.0",
@@ -28,14 +26,14 @@
     "not ie 11"
   ],
   "error": {
-  "link": null,
-  "message": "500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application. Event ID: d5f5f46cceb24012a8f37c536bfabd49.",
-  "type": "InternalServerError",
-  "event_id": "d5f5f46cceb24012a8f37c536bfabd49"
+    "link": null,
+    "message": "500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application. Event ID: d5f5f46cceb24012a8f37c536bfabd49.",
+    "type": "InternalServerError",
+    "event_id": "d5f5f46cceb24012a8f37c536bfabd49"
   },
   "meta": {
-  "status": 500,
-  "request_id": null,
-  "version": "0.1.dev1+g7415ab8"
+    "status": 500,
+    "request_id": null,
+    "version": "0.1.dev1+g7415ab8"
   }
 }

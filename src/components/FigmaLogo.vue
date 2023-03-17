@@ -6,12 +6,14 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
     export default {
-        data(){
-            return{
-                figmaTitle: 'FIGMA',
-                figmaLogo: './img/figma-logo.png',
-            }
+        computed: {
+            ...mapState({
+                figmaTitle: state => state.figmaTitle,
+                figmaLogo: state => state.figmaLogo,
+            })
         }
     }
 </script>

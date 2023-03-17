@@ -6,10 +6,7 @@
             </div>
             <div class="notification__figma">
                 <FigmaLogo />
-                <div
-                    class="notification__figma-when"
-                    :class="{active : notificationVisible}"
-                >
+                <div class="notification__figma-when" :class="{ active: notificationVisible }">
                     {{ when }}
                 </div>
             </div>
@@ -29,20 +26,21 @@
 </template>
 
 <script>
-    import FigmaLogo from './FigmaLogo.vue';
+import { mapState } from 'vuex';
+import FigmaLogo from './FigmaLogo.vue';
 
-    export default {
-        components:{
-            FigmaLogo
-        },
-        data(){
-            return{
-                Dismiss: 'Dismiss',
-                close: './img/Close.svg',
-                when: 'now',
-                contentTitle: 'Notification Title',
-                contentText: 'Notification text would be placed right here. This is where notification text would be placed.'
-            }
-        }
+export default {
+    components: {
+        FigmaLogo
+    },
+    computed: {
+        ...mapState({
+            Dismiss: state => state.Dismiss,
+            close: state => state.close,
+            when: state => state.when,
+            contentTitle: state => state.contentTitle,
+            contentText: state => state.contentText,
+        })
     }
+}
 </script>

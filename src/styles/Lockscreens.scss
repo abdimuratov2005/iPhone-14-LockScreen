@@ -1,19 +1,21 @@
-.lockscreen{
+.lockscreen {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     position: relative;
     transition: .8 ease all;
-    &__render{
+    background-color: rgba(199, 188, 188, 0.4);
+    &__render {
         width: 375px;
         height: 812px;
+        border-radius: 30px;
         background: url("@/img/Wallpaper.png") no-repeat;
     }
-    &__container{
+    &__container {
         position: relative;
         transition: all .5s ease;
-        &.active{
+        &.active {
             background: rgba(255, 255, 255, 0.01);
             backdrop-filter: blur(20px);
         }

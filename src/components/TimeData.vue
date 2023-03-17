@@ -4,19 +4,13 @@
             <div class="timeData__lock">
                 <img src="@/img/Lock.svg" alt="Lock">
             </div>
-            <Time class="time"/>
+            <Time class="time" />
             <Date />
         </div>
     </div>
 </template>
 
-<script>
-    import Time from './Time.vue';
-    import Date from './Date.vue';
-    export default {
-        components:{
-            Time,
-            Date
-        },
-    }
+<script setup>
+import Time from './Time.vue';
+import Date from './Date.vue';
 </script>

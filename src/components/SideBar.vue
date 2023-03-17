@@ -17,21 +17,18 @@
 </template>
 
 <script>
-    import Time from './Time.vue';
+    import { mapState } from 'vuex';
+import Time from './Time.vue';
 
     export default {
         components:{
             Time
         },
-        data(){
-            return{
-                rightSide: [
-                    {id: 1, icon: './img/Mobile Signal.svg'},
-                    {id: 2, icon: './img/Wifi.svg'},
-                    {id: 3, icon: './img/Battery.svg'}
-                ],
-                notch: './img/Notch.svg'
-            }
-        },
+        computed: {
+            ...mapState({
+                rightSide: state => state.rightSide,
+                notch: state => state.notch,
+            })
+        }
     }
 </script>

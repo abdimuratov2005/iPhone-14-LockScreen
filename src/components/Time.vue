@@ -1,19 +1,18 @@
 <template>
     <div :ref="minutes" class="sidebar__time">
-        {{ hours }}:{{ minutes}}
+        {{ hours }}:{{ minutes }}
     </div>
 </template>
 
 <script>
-    export default {
-        data() {
-            return{
-                hours: new Date().getHours(),
-                minutes: new Date().getMinutes(),
-            }
-        },
-        methods:{
-            
-        }
+import { mapState } from 'vuex';
+
+export default {
+    computed: {
+        ...mapState({
+            hours: state => state.hours,
+            minutes: state => state.minutes,
+        })
     }
+}
 </script>

@@ -5,16 +5,13 @@
 </template>
 
 <script>
-    let options = {
-        month: 'long',
-        day: 'numeric',
-        weekday: 'long',
+import { mapState } from 'vuex'
+export default {
+    computed: {
+        ...mapState({
+            dates : state => state.dates,
+            
+        })
     }
-    export default {
-        data(){
-            return{
-                dates: new Date(2023,1,23).toLocaleString('en-US', options),
-            }
-        }
-    }
+}
 </script>

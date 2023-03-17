@@ -1,19 +1,22 @@
-*,*::after,*::before{
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700,900);
+
+*,
+*::after,
+*::before {
     list-style: none;
     user-select: none;
-    font-family: "SF PRO Display";
     list-style: none;
     text-decoration: none;
+    font-family: "Roboto";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 @import "Lockscreens";
-    @import "SideBar";
-    @import "Date";
-    @import "TimeData";
-    @import "Notification";
-    @import "FigmaLogo";
-    @import "Footer";
-    
+@import "SideBar";
+@import "Date";
+@import "TimeData";
+@import "Notification";
+@import "FigmaLogo";
+@import "Footer";
